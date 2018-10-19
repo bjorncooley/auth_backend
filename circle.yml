@@ -26,7 +26,7 @@ deployment:
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: missionu-deployments
+            bucket: <BUCKET_NAME>
             key_pattern: authorizer-staging/deploy-{SHORT_COMMIT}-{BUILD_NUM}
         region: us-west-1
         deployment_group: InPlace-1

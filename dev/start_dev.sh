@@ -7,7 +7,7 @@ workon authorizer
 
 export DBUSER=local_admin
 export DBPASS=default
-export DBNAME=missionu_main_dev
+export DBNAME=DB_NAME
 export DBHOST=localhost
 export FLASK_APP=api/api.py
 export SECRET_KEY="notarealsecretkey"

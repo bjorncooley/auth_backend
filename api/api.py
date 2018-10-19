@@ -224,8 +224,7 @@ def forgot_password():
     )
     if mailgun_response.status_code != 200:
         return make_response(
-            '''There was an error sending your reset link,
-            please email tech@missionu.com with this error: %s'''
+            '''There was an error sending your reset link: %s'''
             % mailgun_response.text, mailgun_response.status_code)
 
     db = DatabaseService()
